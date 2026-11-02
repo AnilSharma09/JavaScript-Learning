@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>To-do</h1>
+    <form id="form">
+      <input id="input" placeholder="Naya kaam likho..." autocomplete="off" required>
+      <button>Add</button>
+    </form>
+    <div class="filters" role="group" aria-label="Filter">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="done">Done</button>
+    </div>
+    <ul id="list"></ul>
+    <footer>
+      <span id="count"></span>
+      <button id="clearDone">Completed hatao</button>
+    </footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

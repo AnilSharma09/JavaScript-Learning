@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Practice</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+    section { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+    .active { color: crimson; font-weight: bold; }
+    .error { color: crimson; }
+    li { cursor: pointer; }
+    #box { height: 80px; background: #eef; display: grid; place-items: center; }
+  </style>
+</head>
+<body>
+  <h1 id="title">DOM Practice</h1>
+
+  <section>
+    <h2>1. Content aur class</h2>
+    <p id="text">Is text ko badlo.</p>
+    <button id="changeBtn">Text badlo</button>
+    <button id="toggleBtn">Class toggle</button>
+  </section>
+
+  <section>
+    <h2>2. Create / remove (event delegation)</h2>
+    <input id="itemInput" placeholder="Item likho">
+    <button id="addBtn">Add</button>
+    <ul id="list"><li>Item par click karo = delete</li></ul>
+  </section>
+
+  <section>
+    <h2>3. Form validation</h2>
+    <form id="form" novalidate>
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password (min 8)">
+      <button>Submit</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <section>
+    <h2>4. Events (mouse, keyboard)</h2>
+    <div id="box">Mouse yahan laao</div>
+    <p id="keyOut">Koi key dabao...</p>
+  </section>
+
+  <section>
+    <h2>5. Fetch + localStorage</h2>
+    <button id="loadBtn">Users load karo</button>
+    <ul id="users"></ul>
+    <label>Theme: <button id="themeBtn">Dark/Light</button></label>
+  </section>
+
+  <script src="dom-practice.js" defer></script>
+</body>
+</html>

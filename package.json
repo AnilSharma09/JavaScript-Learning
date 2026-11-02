@@ -1,0 +1,11 @@
+{
+  "name": "javascript-learning",
+  "version": "1.0.0",
+  "description": "JavaScript zero se advanced: runnable examples, practice aur projects",
+  "type": "module",
+  "scripts": {
+    "basics": "node 01-basics/variables-types.js",
+    "all": "node run-all.js"
+  },
+  "license": "MIT"
+}
